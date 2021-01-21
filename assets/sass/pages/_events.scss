@@ -1,0 +1,58 @@
+.header__events{
+    background-image: url(../image/mobile/events/events.jpg);
+}
+
+.main-events{
+
+    .arrow{
+        color: $color-red;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .main__content--section-one{
+        @include mobile-bodyimage;
+        position: relative;
+        margin-top: 7rem;
+
+        .section-one__wedding{
+            background: url(../image/mobile/events/wedding_label.jpg) center no-repeat;
+            @include mobile-bodyimage;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            .arrow-right{
+                right: 0;
+            }
+
+            .wedding{
+                
+                .header__content{
+                    display: none;
+                }
+            }
+        }
+
+        .section-one__confirmation{
+            background: url(../image/mobile/events/confirmation_label.jpg) center no-repeat;
+            @include mobile-bodyimage;
+            position: absolute;
+            top: 0;
+            right: 100%;
+
+            .arrow-left{
+                left: 0;
+            }
+
+            .confirmation{
+
+                .header__content{
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

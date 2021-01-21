@@ -12,6 +12,12 @@
   width: 3.5rem !important;
   transform: rotateZ(-45deg) translate(2px, -2px); }
 
+.events-click-right {
+  left: 0 !important; }
+
+.events-click-left {
+  left: -100% !important; }
+
 *,
 *::after,
 *::before {
@@ -36,6 +42,11 @@ body {
     font-size: 2.4rem;
     line-height: 2.9rem;
     margin-bottom: 1.5rem; }
+  .header-primary h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1.5rem; }
 
 .heading-secondary {
   width: 32rem;
@@ -44,9 +55,15 @@ body {
     font-size: 2.4rem;
     margin-bottom: 1.5rem; }
 
+.paragraph-short > p:not(:last-child) {
+  margin-bottom: 1rem; }
+
 .paragraph-short p {
   font-size: 1.6rem;
   line-height: 2.7rem; }
+
+.paragraph-long > p:not(:last-child) {
+  margin-bottom: 1rem; }
 
 .paragraph-long p {
   font-size: 1.6rem;
@@ -74,6 +91,20 @@ body {
   border: none;
   width: 8rem !important;
   height: 3rem !important; }
+
+.contact-form {
+  margin-top: 7rem; }
+  .contact-form form {
+    width: 32rem;
+    margin: 0 auto; }
+    .contact-form form > *:not(:last-child) {
+      box-sizing: border-box;
+      margin-bottom: 1.5rem;
+      width: 32rem;
+      height: 3rem;
+      font-size: 1.6rem; }
+    .contact-form form textarea {
+      height: 15rem !important; }
 
 header {
   width: 100%;
@@ -157,20 +188,6 @@ footer {
         color: #fff;
         text-decoration: none; }
 
-.contact-form {
-  margin-top: 5rem; }
-  .contact-form form {
-    width: 32rem;
-    margin: 0 auto; }
-    .contact-form form > *:not(:last-child) {
-      box-sizing: border-box;
-      margin-bottom: 1.5rem;
-      width: 32rem;
-      height: 3rem;
-      font-size: 1.6rem; }
-    .contact-form form textarea {
-      height: 15rem !important; }
-
 .header__about {
   background-image: url(../image/mobile/about/team.jpg); }
 
@@ -209,3 +226,87 @@ footer {
 
 .header__menu {
   background-image: url(../image/mobile/headers/menu.jpg); }
+
+.menu-photo {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden; }
+  .menu-photo a {
+    position: absolute;
+    padding: 7.5rem;
+    top: 0;
+    left: 0; }
+  .menu-photo::after {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.menu-item-content {
+  display: none; }
+
+.main-menu .main__content--section-one {
+  margin-top: 7rem !important;
+  width: 32rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+  justify-content: space-between;
+  align-content: space-between !important; }
+  .main-menu .main__content--section-one .section-one__winter--img {
+    background: linear-gradient(0deg, rgba(16, 159, 222, 0.7), rgba(16, 159, 222, 0.7)), url(../image/mobile/menu/winter.jpg) center no-repeat; }
+    .main-menu .main__content--section-one .section-one__winter--img::after {
+      content: "WINTER"; }
+  .main-menu .main__content--section-one .section-one__spring--img {
+    background: linear-gradient(0deg, rgba(161, 230, 87, 0.7), rgba(161, 230, 87, 0.7)), url(../image/mobile/menu/spring.jpg) center no-repeat; }
+    .main-menu .main__content--section-one .section-one__spring--img::after {
+      content: "SPRING"; }
+  .main-menu .main__content--section-one .section-one__summer--img {
+    background: linear-gradient(0deg, rgba(247, 232, 87, 0.7), rgba(247, 232, 87, 0.7)), url(../image/mobile/menu/summer.jpg) center no-repeat; }
+    .main-menu .main__content--section-one .section-one__summer--img::after {
+      content: "SUMMER"; }
+  .main-menu .main__content--section-one .section-one__autumn--img {
+    background: linear-gradient(0deg, rgba(212, 105, 74, 0.7), rgba(212, 105, 74, 0.7)), url(../image/mobile/menu/autumn.jpg) center no-repeat; }
+    .main-menu .main__content--section-one .section-one__autumn--img::after {
+      content: "AUTUMN"; }
+
+.header__events {
+  background-image: url(../image/mobile/events/events.jpg); }
+
+.main-events .arrow {
+  color: #96192B;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.main-events .main__content--section-one {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  margin-top: 7rem; }
+  .main-events .main__content--section-one .section-one__wedding {
+    background: url(../image/mobile/events/wedding_label.jpg) center no-repeat;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .main-events .main__content--section-one .section-one__wedding .arrow-right {
+      right: 0; }
+    .main-events .main__content--section-one .section-one__wedding .wedding .header__content {
+      display: none; }
+  .main-events .main__content--section-one .section-one__confirmation {
+    background: url(../image/mobile/events/confirmation_label.jpg) center no-repeat;
+    width: 100%;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    right: 100%; }
+    .main-events .main__content--section-one .section-one__confirmation .arrow-left {
+      left: 0; }
+    .main-events .main__content--section-one .section-one__confirmation .confirmation .header__content {
+      display: none; }

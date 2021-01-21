@@ -2,10 +2,82 @@
     background-image: url(../image/mobile/headers/menu.jpg);
 }
 
-.main__content--section-one{
+.menu-photo{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+
+    a{
+        position: absolute;
+        padding: 7.5rem;
+        top: 0;
+        left: 0;
+    }
+
+    &::after{
+        font-size: 2.4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.menu-item-content{
+    display: none;
+}
+
+.main-menu{
+     .main__content--section-one{
+        margin-top: 7rem !important;
+        @include mobile-inscreen;
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 2rem;
+        justify-content: space-between;
+        align-content: space-between !important;
+
     .section-one__winter{
         &--img{
-            background-image: ;
+            background: linear-gradient(0deg, rgba($color-winter, .7), rgba($color-winter, .7)), url(../image/mobile/menu/winter.jpg) center no-repeat;
+
+            &::after{
+                content: "WINTER";
+            }
+
         }
     }
+
+    .section-one__spring{
+        &--img{
+            background: linear-gradient(0deg, rgba($color-spring, .7), rgba($color-spring, .7)), url(../image/mobile/menu/spring.jpg) center no-repeat;
+
+            &::after{
+                content: "SPRING"
+            }
+        }
+    }
+
+    .section-one__summer{
+        &--img{
+            background: linear-gradient(0deg, rgba($color-summer, .7), rgba($color-summer, .7)), url(../image/mobile/menu/summer.jpg) center no-repeat;
+
+            &::after{
+                content: "SUMMER"
+            }
+        }
+    }
+
+    .section-one__autumn{
+        &--img{
+            background: linear-gradient(0deg, rgba($color-autumn, .7), rgba($color-autumn, .7)), url(../image/mobile/menu/autumn.jpg) center no-repeat;
+
+            &::after{
+                content: "AUTUMN"
+            }
+        }
+    }
+}
 }

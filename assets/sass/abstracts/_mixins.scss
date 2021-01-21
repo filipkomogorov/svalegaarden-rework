@@ -2,3 +2,8 @@
     width: 32rem;
     margin: 0 auto;
 }
+
+@mixin mobile-bodyimage{
+    width: 100%;
+    height: 30rem;
+}
