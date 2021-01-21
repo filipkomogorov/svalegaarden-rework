@@ -1,0 +1,22 @@
+.contact-form{
+    margin-top: 5rem;
+
+    form{
+        @include mobile-inscreen;
+
+        &>*:not(:last-child){
+            box-sizing: border-box;
+            margin-bottom: 1.5rem;
+            width: 32rem;
+            height: 3rem;
+            font-size: 1.6rem;
+        }
+
+        textarea{
+            height: 15rem !important;
+        }
+
+
+    }
+
+}

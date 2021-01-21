@@ -1,0 +1,26 @@
+.header__landing{
+    background-image: url(../image/mobile/headers/home.jpg);
+}
+
+.main-home{
+    width: 100%;
+
+    &>*:not(:first-child){
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        align-items: center;
+        background-size: cover !important;
+    }
+
+    .main__content--section-one{
+        width: 100%;
+        background: linear-gradient(0deg, rgba($color-blue, .8), rgba($color-blue, .8)), url(../image/mobile/landing/menu.jpg) center no-repeat;
+        margin-top: 7rem;
+
+    }
+
+    .main__content--section-two{
+        background: linear-gradient(0deg, rgba($color-red, .8), rgba($color-red, .8)), url(../image/mobile/landing/events.jpg) center no-repeat;
+    }
+}

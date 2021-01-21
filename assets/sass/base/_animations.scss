@@ -1,0 +1,17 @@
+.navigation-show{
+    left: 0 !important;
+}
+
+.hamburger-animation{
+    .line1{
+        width: 3.5rem !important;
+        transform: rotateZ(45deg) translate(3px, 4px);
+    }
+    .line2{
+        display: none;
+    }
+    .line3{
+        width: 3.5rem !important;
+        transform: rotateZ(-45deg) translate(2px, -2px);
+    }
+}

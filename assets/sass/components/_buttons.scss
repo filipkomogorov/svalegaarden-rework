@@ -1,0 +1,26 @@
+.btn{
+    display: block;
+    margin-top: 2rem;
+    width: 12.5rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-red;
+    border-radius: 3px;
+    box-shadow: 2px 3px 1px 0 $color-white;
+}
+
+.btn--blue{
+    background-color: $color-blue !important;
+}
+
+.btn--submit{
+    margin: 0!important;
+    border: none;
+    width: 8rem !important;
+    height:  3rem !important;
+
+}

@@ -1,0 +1,22 @@
+{
+  "name": "svalegaarden-rework",
+  "version": "1.0.0",
+  "description": "rework of the group203 mmdi0920 class project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipkomogorov/svalegaarden-rework.git"
+  },
+  "author": "Filip K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipkomogorov/svalegaarden-rework/issues"
+  },
+  "homepage": "https://github.com/filipkomogorov/svalegaarden-rework#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

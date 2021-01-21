@@ -1,0 +1,41 @@
+footer{
+    width: 100%;
+    margin: 7rem 0 3rem 0;
+
+    .section-footer{
+        @include mobile-inscreen;
+        text-align: center;
+
+        &__some{
+            margin-bottom: 2rem;
+
+            &>*:not(:last-child){
+                margin-right: 3rem;
+            }
+
+            a{
+                color: $color-white;
+            }
+        }
+
+        &__content{
+            
+            img{
+                width: 29.5rem;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 1.6rem;
+
+                a,
+                a::after,
+                a::before{
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
