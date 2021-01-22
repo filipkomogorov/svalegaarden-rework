@@ -188,6 +188,21 @@ footer {
         color: #fff;
         text-decoration: none; }
 
+.main-seasonal {
+  width: 100%; }
+  .main-seasonal__content {
+    margin: 7rem 0 5rem 0; }
+  .main-seasonal__starters--image {
+    width: 100%;
+    height: 30rem;
+    margin: 7rem 0 5rem 0; }
+  .main-seasonal__maincourse--image {
+    display: none; }
+  .main-seasonal__desserts--image {
+    width: 100%;
+    height: 30rem;
+    margin: 7rem 0 5rem 0; }
+
 .header__about {
   background-image: url(../image/mobile/about/team.jpg); }
 
@@ -310,3 +325,23 @@ footer {
       left: 0; }
     .main-events .main__content--section-one .section-one__confirmation .confirmation .header__content {
       display: none; }
+
+.header__winter {
+  background-image: url(../image/mobile/winter/landing.jpg); }
+
+.starters-winter {
+  width: 100%;
+  background: url(../image/mobile/winter/starters.jpg) no-repeat center; }
+
+.desserts-winter {
+  width: 100%;
+  background: url(../image/mobile/winter/desserts.jpg) no-repeat center; }
+
+.header__spring {
+  background-image: url(../image/mobile/spring/landing.jpg); }
+
+.starters-spring {
+  background: url(../image/mobile/spring/starters.jpg) center no-repeat; }
+
+.desserts-spring {
+  background: url(../image/mobile/spring/dessert.jpg) center no-repeat; }

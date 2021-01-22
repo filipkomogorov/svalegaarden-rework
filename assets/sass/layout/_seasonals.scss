@@ -1,0 +1,23 @@
+.main-seasonal{
+    width: 100%;
+
+    
+    &__content{
+        @include mobile-body-margins;
+    }
+
+    &__starters--image{
+        @include mobile-bodyimage;
+        @include mobile-body-margins;
+    }
+
+    &__maincourse--image{
+        display: none;
+    }
+
+    &__desserts--image{
+        @include mobile-bodyimage;
+        @include mobile-body-margins;
+    }
+}
+
