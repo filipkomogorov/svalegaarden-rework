@@ -310,6 +310,10 @@ footer {
     position: absolute;
     top: 0;
     left: 0; }
+    .main-events .main__content--section-one .section-one__wedding--link {
+      display: block;
+      width: 100%;
+      height: 30rem; }
     .main-events .main__content--section-one .section-one__wedding .arrow-right {
       right: 0; }
     .main-events .main__content--section-one .section-one__wedding .wedding .header__content {
@@ -321,6 +325,10 @@ footer {
     position: absolute;
     top: 0;
     right: 100%; }
+    .main-events .main__content--section-one .section-one__confirmation--link {
+      display: block;
+      width: 100%;
+      height: 30rem; }
     .main-events .main__content--section-one .section-one__confirmation .arrow-left {
       left: 0; }
     .main-events .main__content--section-one .section-one__confirmation .confirmation .header__content {
@@ -345,3 +353,21 @@ footer {
 
 .desserts-spring {
   background: url(../image/mobile/spring/dessert.jpg) center no-repeat; }
+
+.header__summer {
+  background-image: url(../image/mobile/summer/landing.jpg); }
+
+.starters-summer {
+  background: url(../image/mobile/summer/starters.jpg) center no-repeat; }
+
+.desserts-summer {
+  background: url(../image/mobile/summer/dessert.jpg) center no-repeat; }
+
+.header__autumn {
+  background-image: url(../image/mobile/autumn/landing.jpg); }
+
+.starters-autumn {
+  background: url(../image/mobile/autumn/starters.jpg) center no-repeat; }
+
+.desserts-autumn {
+  background: url(../image/mobile/autumn/dessert.jpg) center no-repeat; }
