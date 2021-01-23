@@ -12,18 +12,39 @@
     .main__content--section-one{
         width: 100%;
 
+        @include responsive(desktop){
+            width: 114rem;
+            margin: 0 auto;
+        }
+
         .section-one__img{
             width: 100%;
             height: 25rem;
             margin: 7rem 0 4rem 0;
 
+            @include responsive(desktop){
+                width: 70rem !important;
+                height: 40rem !important;
+                margin: 7rem auto 7rem auto;
+            }
+
             img{
                 width: 100%;
                 height: 25rem;
+
+                @include responsive(desktop){
+                    height: 40rem !important;
+                }
             }
         }
 
         .section-one__content{
+
+            @include responsive(desktop){
+                margin: 0 auto !important;
+            }
+
+
             &>p:not(:last-child){
                 margin-bottom: 2rem;
             }

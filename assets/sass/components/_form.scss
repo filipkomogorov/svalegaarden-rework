@@ -1,8 +1,28 @@
 .contact-form{
     margin-top: 7rem;
 
+    @include responsive(desktop){
+        width: 114rem;
+        margin: 7rem auto 0 auto;
+        text-align: center
+    }
+
+    .contact-form__title{
+
+        @include responsive(desktop){
+            width: 114rem !important;
+            margin: 0 auto !important;
+        }
+    }
+
+
     form{
         @include mobile-inscreen;
+
+        @include responsive(desktop){
+            width: 70rem !important;
+        }
+ 
 
         &>*:not(:last-child){
             box-sizing: border-box;
@@ -10,6 +30,13 @@
             width: 32rem;
             height: 3rem;
             font-size: 1.6rem;
+
+            @include responsive(desktop){
+                width: 70rem;
+                margin: 0 auto;
+                margin-bottom: 2rem !important;
+                font-size: 1.8rem;
+            }
         }
 
         textarea{

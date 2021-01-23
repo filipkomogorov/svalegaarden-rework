@@ -1,6 +1,6 @@
 @mixin mobile-inscreen{
-    width: 32rem;
-    margin: 0 auto;
+    width: 32rem !important;
+    margin: 0 auto !important;
 }
 
 @mixin mobile-bodyimage{
@@ -9,5 +9,25 @@
 }
 
 @mixin mobile-body-margins{
-    margin: 7rem 0 0 0;
+    margin: 7rem 0 0 0 !important;
+}
+
+@mixin grid-menu{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+}
+
+/////// MEDIA QUERIES
+
+// breakpoints
+// tablets - 500px to 768px
+// desktops 768px up
+@mixin responsive($breakpoint){
+    @if $breakpoint == tablet {
+        @media (min-width:31.25em) and (max-width: 48em){@content};
+    }
+    @if $breakpoint == desktop {
+        @media (min-width: 48em) {@content};
+    }
 }

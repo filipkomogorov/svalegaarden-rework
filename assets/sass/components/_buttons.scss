@@ -11,6 +11,14 @@
     background-color: $color-red;
     border-radius: 3px;
     box-shadow: 2px 3px 1px 0 $color-white;
+
+    @include responsive(desktop){
+        width: 17rem;
+        height: 4rem;
+        font-size: 1.6rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+    }
 }
 
 .btn--blue{
@@ -22,5 +30,10 @@
     border: none;
     width: 8rem !important;
     height:  3rem !important;
+
+    @include responsive(desktop){
+        width: 17rem !important;
+        height: 4rem !important;
+    }
 
 }

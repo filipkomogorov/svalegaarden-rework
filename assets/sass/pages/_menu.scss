@@ -8,6 +8,10 @@
     height: 15rem;
     overflow: hidden;
 
+    @include responsive(desktop){
+        width: 57rem !important;
+        height: 50rem !important;
+    }
     a{
         position: absolute;
         padding: 7.5rem;
@@ -26,11 +30,15 @@
 
 .menu-item-content{
     display: none;
+
+    @include responsive(desktop){
+        display: block;
+    }
 }
 
 .main-menu{
      .main__content--section-one{
-        margin-top: 7rem !important;
+        
         @include mobile-inscreen;
         display: grid;
         grid-template-rows: repeat(2, auto);
@@ -38,44 +46,146 @@
         grid-gap: 2rem;
         justify-content: space-between;
         align-content: space-between !important;
+        margin-top: 7rem !important;
+
+        @include responsive(desktop){
+            width: 114rem !important;
+            margin: 10rem auto 0 auto !important;
+            grid-template-rows: repeat(4, 50rem);
+            grid-template-columns: repeat(12, 1fr);
+            grid-row-gap: 5rem;
+            grid-column-gap: 0;
+        }
+
 
     .section-one__winter{
+        
+        @include responsive(desktop){
+            grid-row: 1/2;
+            grid-column: 1/13;
+            @include grid-menu;
+        }
+
+    
         &--img{
             background: linear-gradient(0deg, rgba($color-winter, .7), rgba($color-winter, .7)), url(../image/mobile/menu/winter.jpg) center no-repeat;
 
+            @include responsive(desktop){
+                grid-row: 1/2;
+                grid-column: 1/7;
+                background: url(../image/desktop/menu/winter.jpg) center no-repeat;
+            }
+
             &::after{
                 content: "WINTER";
+
+                @include responsive(desktop){
+                    display: none !important;
+                }
             }
+        }
+
+        &--content{
+            grid-row: 1/2;
+            grid-column: 7/13;
+            align-self: center;
+            justify-self: end;
         }
     }
 
     .section-one__spring{
+        @include responsive(desktop){
+            grid-row: 2/3;
+            grid-column: 1/13;
+            @include grid-menu;
+        }
         &--img{
             background: linear-gradient(0deg, rgba($color-spring, .7), rgba($color-spring, .7)), url(../image/mobile/menu/spring.jpg) center no-repeat;
 
-            &::after{
-                content: "SPRING"
+            @include responsive(desktop){
+                grid-row: 1/2;
+                grid-column: 7/13;
+                background: url(../image/desktop/menu/spring.jpg) center no-repeat;
             }
+
+            &::after{
+                content: "SPRING";
+
+                @include responsive(desktop){
+                    display: none !important;
+                }
+            }
+        }
+
+        &--content{
+            grid-row: 1/2;
+            grid-column: 1/7;
+            align-self: center;
+            justify-self: start;
         }
     }
 
     .section-one__summer{
+        @include responsive(desktop){
+            grid-row: 3/4;
+            grid-column: 1/13;
+            @include grid-menu;
+        }
         &--img{
             background: linear-gradient(0deg, rgba($color-summer, .7), rgba($color-summer, .7)), url(../image/mobile/menu/summer.jpg) center no-repeat;
+            
+
+            @include responsive(desktop){
+                grid-row: 1/2;
+                grid-column: 1/7;
+                background: url(../image/desktop/menu/summer.jpg) center no-repeat;
+            }
 
             &::after{
-                content: "SUMMER"
+                content: "SUMMER";
+
+                @include responsive(desktop){
+                    display: none !important;
+                }
             }
+        }
+
+        &--content{
+            grid-row: 1/2;
+            grid-column: 7/13;
+            align-self: center;
+            justify-self: end;
         }
     }
 
     .section-one__autumn{
+       @include responsive(desktop){
+        grid-row: 4/5;
+        grid-column: 1/13;
+        @include grid-menu;
+       }
         &--img{
             background: linear-gradient(0deg, rgba($color-autumn, .7), rgba($color-autumn, .7)), url(../image/mobile/menu/autumn.jpg) center no-repeat;
 
-            &::after{
-                content: "AUTUMN"
+            @include responsive(desktop){
+                grid-row: 1/2;
+                grid-column: 7/13;
+                background: url(../image/desktop/menu/fall.jpg) center no-repeat;
             }
+
+            &::after{
+                content: "AUTUMN";
+
+                @include responsive(desktop){
+                    display: none !important;
+                }
+            }
+        }
+        &--content{
+            grid-row: 1/2;
+            grid-column: 1/7;
+            align-self: center;
+            justify-self: start;
         }
     }
 }

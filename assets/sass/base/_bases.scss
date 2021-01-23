@@ -7,9 +7,13 @@
 }
 
 html{
-    // define what 1 rem is
+    // define what 1 rem is - 10px
     font-size: 62.5%;
     font-family: 'Open Sans', sans-serif;
+
+    @include responsive(tablet){
+        font-size: 112.5%  //making the 1rem = 18px
+    }
 }
 
 body{

@@ -1,0 +1,137 @@
+.cards{
+    @include mobile-inscreen;
+    height: 175rem !important;
+    display: grid !important;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4,auto);
+
+    @include responsive(desktop){
+        width: 114rem !important;
+        margin: 0 auto;
+        margin-top: 7rem !important;
+        height: auto;
+        grid-template-columns: repeat(3, auto) !important;
+        grid-template-rows: 10rem 60rem;
+        grid-row-gap: 7rem;
+        justify-content: space-around !important;
+    }
+
+    &__title{
+        @include mobile-body-margins;
+        margin-bottom: 13rem !important;
+        grid-column: 1/13;
+        grid-row: 1/2;
+        font-size: 2.4rem;
+        text-align: center;
+
+        @include responsive(desktop){
+            margin: 0 !important;
+            grid-column: 1/4;
+            font-size: 3.2rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__one{
+        grid-column: 1/14;
+        grid-row: 2/3;
+
+        @include responsive(desktop){
+            grid-column: 1/2;
+        }
+    }
+
+    &__two{
+        grid-column: 1/13;
+        grid-row: 3/4;
+
+        @include responsive(desktop){
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+    }
+
+    &__three{
+        grid-column: 1/13;
+        grid-row: 4/5;
+
+        @include responsive(desktop){
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+    }
+
+    .card{
+        width: 28rem;
+        height: 42.5rem;
+        margin: 0 auto !important;
+        margin-bottom: 10rem !important;
+        background-color: $color-white;
+        border-radius: 2px;
+        position: relative;
+
+        @include responsive(desktop){
+            height: 45rem;
+        }
+        
+
+        &-image{
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                border: .5rem solid $color-blue;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -50%);
+                background-size: cover !important;
+        }
+    }
+
+    .card__one--image{
+        background: url(../image/mobile/reviews/person-one.jpg) center no-repeat;
+
+    }
+
+    .card__two--image{
+        background: url(../image/mobile/reviews/person-two.jpg) center no-repeat;
+    }
+
+    .card__three--image{
+        background: url(../image/mobile/reviews/person-three.jpg) center no-repeat;
+    }
+
+    .card-content{
+        color: $color-blue;
+        padding: 10rem 3rem 5rem 3rem !important;
+        text-align: center;
+
+        h3{
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+
+            @include responsive(desktop){
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        P{
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            span{
+                color: $color-red;
+            }
+
+            @include responsive(desktop){
+                font-size: 1.8rem;
+            }
+        }
+        cite{
+            font-size: 1.6rem;
+        }
+    }
+
+
+
+}
