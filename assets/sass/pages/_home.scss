@@ -1,5 +1,8 @@
 .header__landing{
     background-image: url(../image/mobile/headers/home.jpg);
+    @include responsive(desktop){
+        background-image: url(../image/desktop/main/landing_desktop.jpg);
+    }
 }
 
 .main-home{

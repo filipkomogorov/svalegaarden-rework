@@ -1,11 +1,28 @@
 .header__summer{
     background-image: url(../image/mobile/summer/landing.jpg);
+
+    @include responsive(desktop){
+        background-image: url(../image/mobile/summer/summerlanding.jpg);
+    }
 }
 
 .starters-summer{
     background: url(../image/mobile/summer/starters.jpg) center no-repeat;
+    @include responsive(desktop){
+        background: url(../image/mobile/summer/startersXL.jpg) center no-repeat;
+    }
+}
+
+.maincourse-summer{
+    @include responsive(desktop){
+        background: url(../image/mobile/summer/mainXL.jpg) center no-repeat;
+    }
 }
 
 .desserts-summer{
     background: url(../image/mobile/summer/dessert.jpg) center no-repeat;
+
+    @include responsive(desktop){
+        background: url(../image/mobile/summer/dessertsXL.jpg) center no-repeat;
+    }
 }

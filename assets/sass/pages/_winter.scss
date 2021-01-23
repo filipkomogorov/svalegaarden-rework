@@ -1,16 +1,38 @@
 .header__winter{
     background-image: url(../image/mobile/winter/landing.jpg);
+
+    @include responsive(desktop){
+        background-image: url(../image/mobile/winter/landing-desktop.jpg);
+    }
+    
 }
 
 .starters-winter{
     width: 100%;
     background: url(../image/mobile/winter/starters.jpg) no-repeat center;
+
+    @include responsive(desktop){
+        background: url(../image/mobile/winter/startersXL.jpg) center no-repeat;
+    }
     
+}
+
+.maincourse-winter{
+
+    @include responsive(desktop){
+        width: 100%;
+        background: url(../image/mobile/winter/mainXL.jpg) center no-repeat;
+
+    }
 }
 
 .desserts-winter{
     width: 100%;
     background: url(../image/mobile/winter/desserts.jpg) no-repeat center;
     
+    @include responsive(desktop){
+        background: url(../image/mobile/winter/dessertsXL.jpg) no-repeat center;
+
+    }
 }
 

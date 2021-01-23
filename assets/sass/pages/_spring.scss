@@ -1,12 +1,29 @@
 .header__spring{
     background-image: url(../image/mobile/spring/landing.jpg);
+
+    @include responsive(desktop){
+        background-image: url(../image/mobile/spring/spring-landing.jpg);
+    }
 }
 
 .starters-spring{
     background: url(../image/mobile/spring/starters.jpg) center no-repeat;
+
+    @include responsive(desktop){
+       background: url(../image/mobile/spring/startersXL.jpg) center no-repeat;
+
+    }
+}
+
+.maincourse-spring{
+    @include responsive(desktop){
+        background: url(../image/mobile/spring/mainXL.jpg) center no-repeat;
+    }
 }
 
 .desserts-spring{
     background: url(../image/mobile/spring/dessert.jpg) center no-repeat;
-
+    @include responsive(desktop){
+        background: url(../image/mobile/spring/dessertXL.jpg) center no-repeat;
+    }
 }

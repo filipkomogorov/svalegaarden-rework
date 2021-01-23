@@ -1,9 +1,22 @@
 .header__autumn{
     background-image: url(../image/mobile/autumn/landing.jpg);
+    @include responsive(desktop){
+        background-image: url(../image/mobile/autumn/autumn_desktop.jpg);
+    }
 }
 
 .starters-autumn{
     background: url(../image/mobile/autumn/starters.jpg) center no-repeat;
+    @include responsive(desktop){
+        background: url(../image/mobile/autumn/startersXL.jpg) center no-repeat;
+    }
+}
+
+.maincourse-autumn{
+    @include responsive(desktop){
+        background: url(../image/mobile/autumn/mainXL.jpg) center no-repeat;
+
+    }
 }
 
 .desserts-autumn{

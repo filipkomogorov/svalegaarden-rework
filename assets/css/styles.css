@@ -212,7 +212,8 @@ body {
   color: #fff;
   background-color: #96192B;
   border-radius: 3px;
-  box-shadow: 2px 3px 1px 0 #fff; }
+  box-shadow: 2px 3px 1px 0 #fff;
+  transition: all .2s; }
   @media (min-width: 48em) {
     .btn {
       width: 17rem;
@@ -220,6 +221,9 @@ body {
       font-size: 1.6rem;
       line-height: 4rem;
       text-transform: uppercase; } }
+  .btn:hover {
+    filter: brightness(120%);
+    transform: translateY(10%); }
 
 .btn--blue {
   background-color: #191c27 !important; }
@@ -406,20 +410,73 @@ footer {
 
 .main-seasonal {
   width: 100%; }
+  @media (min-width: 48em) {
+    .main-seasonal {
+      width: 114rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(4, auto); } }
+  @media (min-width: 48em) {
+    .main-seasonal .main__header {
+      grid-row: 1/2;
+      grid-column: 1/13; } }
   .main-seasonal__content {
     margin: 7rem 0 0 0 !important; }
+    @media (min-width: 48em) {
+      .main-seasonal__content {
+        width: 49rem !important; } }
   .main-seasonal__starters--image {
     width: 100%;
     height: 30rem;
     margin: 7rem 0 0 0 !important;
     background-size: cover !important; }
+    @media (min-width: 48em) {
+      .main-seasonal__starters--image {
+        width: 57rem !important;
+        height: 55rem !important;
+        grid-row: 2/3;
+        grid-column: 1/7; } }
+  @media (min-width: 48em) {
+    .main-seasonal__starters {
+      grid-row: 2/3;
+      grid-column: 7/13;
+      justify-self: end;
+      align-self: center; } }
   .main-seasonal__maincourse--image {
     display: none; }
+    @media (min-width: 48em) {
+      .main-seasonal__maincourse--image {
+        margin-top: 5rem !important;
+        width: 57rem !important;
+        height: 55rem !important;
+        display: block;
+        grid-row: 3/4;
+        grid-column: 7/13; } }
+  @media (min-width: 48em) {
+    .main-seasonal__maincourse {
+      grid-row: 3/4;
+      grid-column: 1/7;
+      justify-self: start;
+      align-self: center; } }
   .main-seasonal__desserts--image {
     width: 100%;
     height: 30rem;
     margin: 7rem 0 0 0 !important;
     background-size: cover !important; }
+    @media (min-width: 48em) {
+      .main-seasonal__desserts--image {
+        margin-top: 5rem !important;
+        width: 57rem !important;
+        height: 55rem !important;
+        grid-row: 4/5;
+        grid-column: 1/7; } }
+  @media (min-width: 48em) {
+    .main-seasonal__desserts {
+      grid-row: 4/5;
+      grid-column: 7/13;
+      justify-self: end;
+      align-self: center; } }
 
 .main-ind-event {
   width: 100%; }
@@ -528,6 +585,9 @@ footer {
 
 .header__landing {
   background-image: url(../image/mobile/headers/home.jpg); }
+  @media (min-width: 48em) {
+    .header__landing {
+      background-image: url(../image/desktop/main/landing_desktop.jpg); } }
 
 .main-home {
   width: 100%; }
@@ -851,38 +911,88 @@ footer {
 
 .header__winter {
   background-image: url(../image/mobile/winter/landing.jpg); }
+  @media (min-width: 48em) {
+    .header__winter {
+      background-image: url(../image/mobile/winter/landing-desktop.jpg); } }
 
 .starters-winter {
   width: 100%;
   background: url(../image/mobile/winter/starters.jpg) no-repeat center; }
+  @media (min-width: 48em) {
+    .starters-winter {
+      background: url(../image/mobile/winter/startersXL.jpg) center no-repeat; } }
+
+@media (min-width: 48em) {
+  .maincourse-winter {
+    width: 100%;
+    background: url(../image/mobile/winter/mainXL.jpg) center no-repeat; } }
 
 .desserts-winter {
   width: 100%;
   background: url(../image/mobile/winter/desserts.jpg) no-repeat center; }
+  @media (min-width: 48em) {
+    .desserts-winter {
+      background: url(../image/mobile/winter/dessertsXL.jpg) no-repeat center; } }
 
 .header__spring {
   background-image: url(../image/mobile/spring/landing.jpg); }
+  @media (min-width: 48em) {
+    .header__spring {
+      background-image: url(../image/mobile/spring/spring-landing.jpg); } }
 
 .starters-spring {
   background: url(../image/mobile/spring/starters.jpg) center no-repeat; }
+  @media (min-width: 48em) {
+    .starters-spring {
+      background: url(../image/mobile/spring/startersXL.jpg) center no-repeat; } }
+
+@media (min-width: 48em) {
+  .maincourse-spring {
+    background: url(../image/mobile/spring/mainXL.jpg) center no-repeat; } }
 
 .desserts-spring {
   background: url(../image/mobile/spring/dessert.jpg) center no-repeat; }
+  @media (min-width: 48em) {
+    .desserts-spring {
+      background: url(../image/mobile/spring/dessertXL.jpg) center no-repeat; } }
 
 .header__summer {
   background-image: url(../image/mobile/summer/landing.jpg); }
+  @media (min-width: 48em) {
+    .header__summer {
+      background-image: url(../image/mobile/summer/summerlanding.jpg); } }
 
 .starters-summer {
   background: url(../image/mobile/summer/starters.jpg) center no-repeat; }
+  @media (min-width: 48em) {
+    .starters-summer {
+      background: url(../image/mobile/summer/startersXL.jpg) center no-repeat; } }
+
+@media (min-width: 48em) {
+  .maincourse-summer {
+    background: url(../image/mobile/summer/mainXL.jpg) center no-repeat; } }
 
 .desserts-summer {
   background: url(../image/mobile/summer/dessert.jpg) center no-repeat; }
+  @media (min-width: 48em) {
+    .desserts-summer {
+      background: url(../image/mobile/summer/dessertsXL.jpg) center no-repeat; } }
 
 .header__autumn {
   background-image: url(../image/mobile/autumn/landing.jpg); }
+  @media (min-width: 48em) {
+    .header__autumn {
+      background-image: url(../image/mobile/autumn/autumn_desktop.jpg); } }
 
 .starters-autumn {
   background: url(../image/mobile/autumn/starters.jpg) center no-repeat; }
+  @media (min-width: 48em) {
+    .starters-autumn {
+      background: url(../image/mobile/autumn/startersXL.jpg) center no-repeat; } }
+
+@media (min-width: 48em) {
+  .maincourse-autumn {
+    background: url(../image/mobile/autumn/mainXL.jpg) center no-repeat; } }
 
 .desserts-autumn {
   background: url(../image/mobile/autumn/dessert.jpg) center no-repeat; }
@@ -892,6 +1002,9 @@ footer {
 
 .header__gallery {
   background-image: url(../image/mobile/gallery/landing.jpg); }
+  @media (min-width: 48em) {
+    .header__gallery {
+      background-image: url(../image/desktop/gallery/gallery.jpg); } }
 
 .main-gallery .gallery-layout {
   width: 100%;

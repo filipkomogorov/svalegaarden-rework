@@ -1,6 +1,9 @@
 
 .header__gallery{
     background-image: url(../image/mobile/gallery/landing.jpg);
+    @include responsive(desktop){
+        background-image: url(../image/desktop/gallery/gallery.jpg);
+    }
 }
 
 .main-gallery{

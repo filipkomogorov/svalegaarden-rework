@@ -11,6 +11,7 @@
     background-color: $color-red;
     border-radius: 3px;
     box-shadow: 2px 3px 1px 0 $color-white;
+    transition: all .2s;
 
     @include responsive(desktop){
         width: 17rem;
@@ -18,6 +19,11 @@
         font-size: 1.6rem;
         line-height: 4rem;
         text-transform: uppercase;
+    }
+
+    &:hover{
+        filter: brightness(120%);
+        transform: translateY(10%);
     }
 }
 
