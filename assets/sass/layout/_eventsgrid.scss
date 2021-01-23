@@ -2,8 +2,7 @@
     width: 100%;
 
     @include responsive(desktop){
-        width: 114rem;
-        margin:  0 auto;
+        @include desktop-body;
     }
 
     .eventsbody{

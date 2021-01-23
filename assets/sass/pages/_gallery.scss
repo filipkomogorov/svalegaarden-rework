@@ -16,8 +16,7 @@
         grid-template-rows: repeat(4, auto);
 
         @include responsive(desktop){
-            width: 114rem !important;
-            margin: 10rem auto;
+            @include desktop-body;
             grid-template-columns: repeat(3, 1fr) !important;
             grid-template-rows: repeat(3, auto);
             grid-gap: 3rem;

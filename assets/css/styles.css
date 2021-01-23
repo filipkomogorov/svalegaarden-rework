@@ -302,6 +302,7 @@ header {
       @media (min-width: 48em) {
         header .header__navigation .navigation__content {
           width: 114rem !important;
+          margin: 0 auto !important;
           height: 7rem;
           grid-template-columns: 30rem 1fr; } }
       @media (min-width: 48em) {
@@ -412,8 +413,8 @@ footer {
   width: 100%; }
   @media (min-width: 48em) {
     .main-seasonal {
-      width: 114rem;
-      margin: 0 auto;
+      width: 114rem !important;
+      margin: 0 auto !important;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: repeat(4, auto); } }
@@ -482,8 +483,8 @@ footer {
   width: 100%; }
   @media (min-width: 48em) {
     .main-ind-event {
-      width: 114rem;
-      margin: 0 auto; } }
+      width: 114rem !important;
+      margin: 0 auto !important; } }
   .main-ind-event .eventsbody {
     display: grid;
     grid-template-columns: 1fr;
@@ -557,8 +558,8 @@ footer {
   width: 100%; }
   @media (min-width: 48em) {
     .main-standard .main__content--section-one {
-      width: 114rem;
-      margin: 0 auto; } }
+      width: 114rem !important;
+      margin: 0 auto !important; } }
   .main-standard .main__content--section-one .section-one__img {
     width: 100%;
     height: 25rem;
@@ -594,7 +595,7 @@ footer {
   @media (min-width: 48em) {
     .main-home {
       width: 114rem !important;
-      margin: 0 auto; } }
+      margin: 0 auto !important; } }
   .main-home > *:not(:first-child) {
     width: 100%;
     height: 40rem;
@@ -700,6 +701,7 @@ footer {
   @media (min-width: 48em) {
     .main-menu .main__content--section-one {
       width: 114rem !important;
+      margin: 0 auto !important;
       margin: 10rem auto 0 auto !important;
       grid-template-rows: repeat(4, 50rem);
       grid-template-columns: repeat(12, 1fr);
@@ -821,9 +823,10 @@ footer {
   margin-top: 7rem; }
   @media (min-width: 48em) {
     .main-events .main__content--section-one {
-      width: 114rem;
+      width: 114rem !important;
+      margin: 0 auto !important;
       height: 115rem !important;
-      margin: 10rem auto 0 auto; } }
+      margin: 10rem auto 0 auto !important; } }
   .main-events .main__content--section-one .section-one__wedding {
     background: url(../image/mobile/events/wedding_label.jpg) center no-repeat;
     width: 100%;
@@ -834,7 +837,8 @@ footer {
     @media (min-width: 48em) {
       .main-events .main__content--section-one .section-one__wedding {
         position: static;
-        width: 114rem;
+        width: 114rem !important;
+        margin: 0 auto !important;
         height: 55rem !important;
         background: none;
         margin-bottom: 5rem !important; } }
@@ -877,7 +881,8 @@ footer {
     @media (min-width: 48em) {
       .main-events .main__content--section-one .section-one__confirmation {
         position: static;
-        width: 114rem;
+        width: 114rem !important;
+        margin: 0 auto !important;
         background: none; } }
     .main-events .main__content--section-one .section-one__confirmation--link {
       display: block;
@@ -1015,7 +1020,7 @@ footer {
   @media (min-width: 48em) {
     .main-gallery .gallery-layout {
       width: 114rem !important;
-      margin: 10rem auto;
+      margin: 0 auto !important;
       grid-template-columns: repeat(3, 1fr) !important;
       grid-template-rows: repeat(3, auto);
       grid-gap: 3rem; } }

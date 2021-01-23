@@ -22,9 +22,9 @@
         margin-top: 7rem;
 
         @include responsive(desktop){
-            width: 114rem;
+            @include desktop-body;
             height: 115rem !important;
-            margin: 10rem auto 0 auto;
+            margin: 10rem auto 0 auto !important;
         }
 
         .section-one__wedding{
@@ -36,7 +36,7 @@
 
             @include responsive(desktop){
                 position: static;
-                width: 114rem;
+                @include desktop-body;
                 height: 55rem !important;
                 background: none;
                 margin-bottom: 5rem !important;
@@ -97,7 +97,7 @@
 
             @include responsive(desktop){
                 position: static;
-                width: 114rem;
+                @include desktop-body;
                 background: none;
             }
             

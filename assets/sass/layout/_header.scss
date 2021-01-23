@@ -34,7 +34,7 @@ header{
            align-items: center;
 
            @include responsive(desktop){
-               width: 114rem !important;
+            @include desktop-body;
                height: 7rem;
                grid-template-columns: 30rem 1fr;
 
